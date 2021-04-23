@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Almarai', sans-serif; 
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #e7e7e7 80%, #fff);
+
+}
+.container {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slide-row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 2400px;
+    transition: all 0.5s;
+}
+.slide-col {
+    width: 800px;
+    position: relative;
+}
+.testimonial {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* Testimonial */
+.user-text p:first-child {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    background: #ffe86e;
+    padding: 20px;
+    border-bottom: 5px solid #700316;
+    border-top: 5px solid #700316;
+}
+/* Client */
+.client {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.client img {
+    width: 70px;
+}
+.client p {
+    padding: 5px 10px;
+}
+.client h3 {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #700316;
+    font-weight: bold;
+}
+/* Left and Right Quotes */
+.slide-col .user-text i {
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+i {
+    font-size: 50px;
+    color: #e39615;
+}
+.slide-col i:first-child {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+/* Navigation Dots */
+.indicator {
+    position: absolute;
+    left: 50%;
+    margin-left: 10px;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+.btn {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #700316;
+    cursor: pointer;
+    z-index: 999;
+}
+.active {
+    width: 45px;
+    transition: 0.2s;
+}
+
+
